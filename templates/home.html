@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>CH.BHAVANA</title>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("url_password");
+            if (x.type === "password") {
+              x.type = "text";
+            } else {
+              x.type = "password";
+            }
+            var y = document.getElementById("password");
+            if (y.type === "password") {
+              y.type = "text";
+            } else {
+              y.type = "password";
+            }
+          }
+
+    </script>
+</head>
+<body>
+    <center><h1>welcome</h1></center>
+    <br>
+    <br>
+
+   <center> <form action="/capture" method="POST">
+
+        <label for="url_password">URL Password:</label>
+        <input type="password" id="url_password" name="url_password"><br><br>
+
+        <label for="user_name">User Name:</label>
+        <input type="text"  id="user_name" name="user_name"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br><input type="checkbox" onclick="myFunction()">Show Password
+        <br><br>
+        <button type="submit">Captue</button>
+    </form></center>
+
+</body>
+</html>
